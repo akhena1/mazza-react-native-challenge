@@ -16,6 +16,34 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* drinkhappyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* drinkhappyTests.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		6110735236764D4385D9F275 /* Barlow-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BFF64B8D39B4704A2CABCF4 /* Barlow-Black.ttf */; };
+		0C543DE0EB7D44F89B1B2176 /* Barlow-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53C9FB4DC404493DA280ED13 /* Barlow-BlackItalic.ttf */; };
+		B44E94C18F5F42A9B5938B86 /* Barlow-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BE86EECC60440DEA7C2039A /* Barlow-Bold.ttf */; };
+		9B0BB2A53F5B45FBBDC4AA4F /* Barlow-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8106B82757F64FEB89D7268D /* Barlow-BoldItalic.ttf */; };
+		51DABE9D1C7A4C0AA10E5C2F /* Barlow-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D5C0F6728941C0A743F6FD /* Barlow-ExtraBold.ttf */; };
+		DC6F5B97220E48AFA288496A /* Barlow-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A05A16CF738432EB9AB00C5 /* Barlow-ExtraBoldItalic.ttf */; };
+		D59B673F6F7746D4AD07B262 /* Barlow-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD9EC18464AB4BC1A2D2B0A3 /* Barlow-ExtraLight.ttf */; };
+		0C34DA13770946399277D938 /* Barlow-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8FBDF07821E64F79A7E15AD1 /* Barlow-ExtraLightItalic.ttf */; };
+		CE1CEC0BDEF64F48AE7EF8A9 /* Barlow-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5BE287895A34D79871726B8 /* Barlow-Italic.ttf */; };
+		AA92E28C704646B29446CB71 /* Barlow-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74661CB584514D2DBE7AEC91 /* Barlow-Light.ttf */; };
+		84B6B25187AB45C2A7C18DD1 /* Barlow-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9609F9B545E64D37852DAA9F /* Barlow-LightItalic.ttf */; };
+		1F0206BC31EE4EFD8F1A66C7 /* Barlow-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7D16801AA0D4C188AB6E99F /* Barlow-Medium.ttf */; };
+		4E52F28A757C41088CA6AB5F /* Barlow-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C816E5C57B8B4F88A748489C /* Barlow-MediumItalic.ttf */; };
+		09B557B554824C92893CD9AB /* Barlow-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77A65612ECB9413EB5E2439A /* Barlow-Regular.ttf */; };
+		0567EB026B5341B890C917CB /* Barlow-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F8B624579B04C588B313DD6 /* Barlow-SemiBold.ttf */; };
+		BAA81B59124445FBBA6733A0 /* Barlow-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7177C05A02D947ABB88FDF7A /* Barlow-SemiBoldItalic.ttf */; };
+		B3B6649D3999497AA76EADA5 /* Barlow-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9459AEFB3769423EB3104919 /* Barlow-Thin.ttf */; };
+		A8A97FA4C07449E19561AF4C /* Barlow-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD78B8A9253B4B279A292A56 /* Barlow-ThinItalic.ttf */; };
+		65835FF8F6E1438C83711E19 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69264203D47E4654913E0CBF /* Lato-Black.ttf */; };
+		34485BC247B3440BBA30E470 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CCC2F0B6102444AAD474D1A /* Lato-BlackItalic.ttf */; };
+		463326E0C47C48B89997BFB3 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8D958C0B47543D98111D518 /* Lato-Bold.ttf */; };
+		2A57CFD3065C41F1977921DE /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2025438F242640E380DCC660 /* Lato-BoldItalic.ttf */; };
+		703D0012EFA24CD58BBBAA8B /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7212F0E7BA5844F2ADD3670D /* Lato-Italic.ttf */; };
+		5605D877D6494C279206B280 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 878E10A2B15D4C6196A1BD1D /* Lato-Light.ttf */; };
+		7916CF6E10F94F1C8A6275F8 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0F4F22E95824894A75050F6 /* Lato-LightItalic.ttf */; };
+		197B259109D74A419C3E5C99 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DBA5BF6E7F73447F9F89186A /* Lato-Regular.ttf */; };
+		73059728C4294C659B19CF66 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 944287A1E460474B8461E492 /* Lato-Thin.ttf */; };
+		750752B09AD24BE7A7A1371A /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD7AC390FDBB485291BDB74F /* Lato-ThinItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +79,34 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = drinkhappy/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		9BFF64B8D39B4704A2CABCF4 /* Barlow-Black.ttf */ = {isa = PBXFileReference; name = "Barlow-Black.ttf"; path = "../src/assets/fonts/Barlow-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		53C9FB4DC404493DA280ED13 /* Barlow-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Barlow-BlackItalic.ttf"; path = "../src/assets/fonts/Barlow-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5BE86EECC60440DEA7C2039A /* Barlow-Bold.ttf */ = {isa = PBXFileReference; name = "Barlow-Bold.ttf"; path = "../src/assets/fonts/Barlow-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8106B82757F64FEB89D7268D /* Barlow-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Barlow-BoldItalic.ttf"; path = "../src/assets/fonts/Barlow-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		11D5C0F6728941C0A743F6FD /* Barlow-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Barlow-ExtraBold.ttf"; path = "../src/assets/fonts/Barlow-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4A05A16CF738432EB9AB00C5 /* Barlow-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Barlow-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Barlow-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CD9EC18464AB4BC1A2D2B0A3 /* Barlow-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Barlow-ExtraLight.ttf"; path = "../src/assets/fonts/Barlow-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8FBDF07821E64F79A7E15AD1 /* Barlow-ExtraLightItalic.ttf */ = {isa = PBXFileReference; name = "Barlow-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Barlow-ExtraLightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B5BE287895A34D79871726B8 /* Barlow-Italic.ttf */ = {isa = PBXFileReference; name = "Barlow-Italic.ttf"; path = "../src/assets/fonts/Barlow-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		74661CB584514D2DBE7AEC91 /* Barlow-Light.ttf */ = {isa = PBXFileReference; name = "Barlow-Light.ttf"; path = "../src/assets/fonts/Barlow-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9609F9B545E64D37852DAA9F /* Barlow-LightItalic.ttf */ = {isa = PBXFileReference; name = "Barlow-LightItalic.ttf"; path = "../src/assets/fonts/Barlow-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E7D16801AA0D4C188AB6E99F /* Barlow-Medium.ttf */ = {isa = PBXFileReference; name = "Barlow-Medium.ttf"; path = "../src/assets/fonts/Barlow-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C816E5C57B8B4F88A748489C /* Barlow-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Barlow-MediumItalic.ttf"; path = "../src/assets/fonts/Barlow-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		77A65612ECB9413EB5E2439A /* Barlow-Regular.ttf */ = {isa = PBXFileReference; name = "Barlow-Regular.ttf"; path = "../src/assets/fonts/Barlow-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7F8B624579B04C588B313DD6 /* Barlow-SemiBold.ttf */ = {isa = PBXFileReference; name = "Barlow-SemiBold.ttf"; path = "../src/assets/fonts/Barlow-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7177C05A02D947ABB88FDF7A /* Barlow-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Barlow-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Barlow-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9459AEFB3769423EB3104919 /* Barlow-Thin.ttf */ = {isa = PBXFileReference; name = "Barlow-Thin.ttf"; path = "../src/assets/fonts/Barlow-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CD78B8A9253B4B279A292A56 /* Barlow-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Barlow-ThinItalic.ttf"; path = "../src/assets/fonts/Barlow-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		69264203D47E4654913E0CBF /* Lato-Black.ttf */ = {isa = PBXFileReference; name = "Lato-Black.ttf"; path = "../src/assets/fonts/Lato-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7CCC2F0B6102444AAD474D1A /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Lato-BlackItalic.ttf"; path = "../src/assets/fonts/Lato-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C8D958C0B47543D98111D518 /* Lato-Bold.ttf */ = {isa = PBXFileReference; name = "Lato-Bold.ttf"; path = "../src/assets/fonts/Lato-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2025438F242640E380DCC660 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Lato-BoldItalic.ttf"; path = "../src/assets/fonts/Lato-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7212F0E7BA5844F2ADD3670D /* Lato-Italic.ttf */ = {isa = PBXFileReference; name = "Lato-Italic.ttf"; path = "../src/assets/fonts/Lato-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		878E10A2B15D4C6196A1BD1D /* Lato-Light.ttf */ = {isa = PBXFileReference; name = "Lato-Light.ttf"; path = "../src/assets/fonts/Lato-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E0F4F22E95824894A75050F6 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; name = "Lato-LightItalic.ttf"; path = "../src/assets/fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DBA5BF6E7F73447F9F89186A /* Lato-Regular.ttf */ = {isa = PBXFileReference; name = "Lato-Regular.ttf"; path = "../src/assets/fonts/Lato-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		944287A1E460474B8461E492 /* Lato-Thin.ttf */ = {isa = PBXFileReference; name = "Lato-Thin.ttf"; path = "../src/assets/fonts/Lato-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FD7AC390FDBB485291BDB74F /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Lato-ThinItalic.ttf"; path = "../src/assets/fonts/Lato-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +196,7 @@
 				00E356EF1AD99517003FC87E /* drinkhappyTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				63B516D597EF42AA91F3CEC3 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -156,6 +213,42 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		63B516D597EF42AA91F3CEC3 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				9BFF64B8D39B4704A2CABCF4 /* Barlow-Black.ttf */,
+				53C9FB4DC404493DA280ED13 /* Barlow-BlackItalic.ttf */,
+				5BE86EECC60440DEA7C2039A /* Barlow-Bold.ttf */,
+				8106B82757F64FEB89D7268D /* Barlow-BoldItalic.ttf */,
+				11D5C0F6728941C0A743F6FD /* Barlow-ExtraBold.ttf */,
+				4A05A16CF738432EB9AB00C5 /* Barlow-ExtraBoldItalic.ttf */,
+				CD9EC18464AB4BC1A2D2B0A3 /* Barlow-ExtraLight.ttf */,
+				8FBDF07821E64F79A7E15AD1 /* Barlow-ExtraLightItalic.ttf */,
+				B5BE287895A34D79871726B8 /* Barlow-Italic.ttf */,
+				74661CB584514D2DBE7AEC91 /* Barlow-Light.ttf */,
+				9609F9B545E64D37852DAA9F /* Barlow-LightItalic.ttf */,
+				E7D16801AA0D4C188AB6E99F /* Barlow-Medium.ttf */,
+				C816E5C57B8B4F88A748489C /* Barlow-MediumItalic.ttf */,
+				77A65612ECB9413EB5E2439A /* Barlow-Regular.ttf */,
+				7F8B624579B04C588B313DD6 /* Barlow-SemiBold.ttf */,
+				7177C05A02D947ABB88FDF7A /* Barlow-SemiBoldItalic.ttf */,
+				9459AEFB3769423EB3104919 /* Barlow-Thin.ttf */,
+				CD78B8A9253B4B279A292A56 /* Barlow-ThinItalic.ttf */,
+				69264203D47E4654913E0CBF /* Lato-Black.ttf */,
+				7CCC2F0B6102444AAD474D1A /* Lato-BlackItalic.ttf */,
+				C8D958C0B47543D98111D518 /* Lato-Bold.ttf */,
+				2025438F242640E380DCC660 /* Lato-BoldItalic.ttf */,
+				7212F0E7BA5844F2ADD3670D /* Lato-Italic.ttf */,
+				878E10A2B15D4C6196A1BD1D /* Lato-Light.ttf */,
+				E0F4F22E95824894A75050F6 /* Lato-LightItalic.ttf */,
+				DBA5BF6E7F73447F9F89186A /* Lato-Regular.ttf */,
+				944287A1E460474B8461E492 /* Lato-Thin.ttf */,
+				FD7AC390FDBB485291BDB74F /* Lato-ThinItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -295,6 +388,34 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				6110735236764D4385D9F275 /* Barlow-Black.ttf in Resources */,
+				0C543DE0EB7D44F89B1B2176 /* Barlow-BlackItalic.ttf in Resources */,
+				B44E94C18F5F42A9B5938B86 /* Barlow-Bold.ttf in Resources */,
+				9B0BB2A53F5B45FBBDC4AA4F /* Barlow-BoldItalic.ttf in Resources */,
+				51DABE9D1C7A4C0AA10E5C2F /* Barlow-ExtraBold.ttf in Resources */,
+				DC6F5B97220E48AFA288496A /* Barlow-ExtraBoldItalic.ttf in Resources */,
+				D59B673F6F7746D4AD07B262 /* Barlow-ExtraLight.ttf in Resources */,
+				0C34DA13770946399277D938 /* Barlow-ExtraLightItalic.ttf in Resources */,
+				CE1CEC0BDEF64F48AE7EF8A9 /* Barlow-Italic.ttf in Resources */,
+				AA92E28C704646B29446CB71 /* Barlow-Light.ttf in Resources */,
+				84B6B25187AB45C2A7C18DD1 /* Barlow-LightItalic.ttf in Resources */,
+				1F0206BC31EE4EFD8F1A66C7 /* Barlow-Medium.ttf in Resources */,
+				4E52F28A757C41088CA6AB5F /* Barlow-MediumItalic.ttf in Resources */,
+				09B557B554824C92893CD9AB /* Barlow-Regular.ttf in Resources */,
+				0567EB026B5341B890C917CB /* Barlow-SemiBold.ttf in Resources */,
+				BAA81B59124445FBBA6733A0 /* Barlow-SemiBoldItalic.ttf in Resources */,
+				B3B6649D3999497AA76EADA5 /* Barlow-Thin.ttf in Resources */,
+				A8A97FA4C07449E19561AF4C /* Barlow-ThinItalic.ttf in Resources */,
+				65835FF8F6E1438C83711E19 /* Lato-Black.ttf in Resources */,
+				34485BC247B3440BBA30E470 /* Lato-BlackItalic.ttf in Resources */,
+				463326E0C47C48B89997BFB3 /* Lato-Bold.ttf in Resources */,
+				2A57CFD3065C41F1977921DE /* Lato-BoldItalic.ttf in Resources */,
+				703D0012EFA24CD58BBBAA8B /* Lato-Italic.ttf in Resources */,
+				5605D877D6494C279206B280 /* Lato-Light.ttf in Resources */,
+				7916CF6E10F94F1C8A6275F8 /* Lato-LightItalic.ttf in Resources */,
+				197B259109D74A419C3E5C99 /* Lato-Regular.ttf in Resources */,
+				73059728C4294C659B19CF66 /* Lato-Thin.ttf in Resources */,
+				750752B09AD24BE7A7A1371A /* Lato-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
