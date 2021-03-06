@@ -3,8 +3,10 @@ import {
   CardStyleInterpolators,
   createStackNavigator,
 } from '@react-navigation/stack';
+
 import InitialScreen from './screens/InitialScreen';
 import Drinks from './screens/Drinks';
+import DrinkDetails from './screens/DrinkDetails';
 
 const Stack = createStackNavigator();
 
@@ -29,6 +31,13 @@ function Routes() {
         }}
         name="drinks"
         component={Drinks}
+      />
+      <Stack.Screen 
+        options={{
+          headerShown: false
+        }}
+        name="drink-details"
+        component={DrinkDetails}
       />
     </Stack.Navigator>
   );
