@@ -5,7 +5,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { useDispatch } from 'react-redux';
 
 // Actions
-import { setDrinkCategory } from '../../redux/actions/drinks';
+import { setDrinkCategory, setSearchText } from '../../redux/actions/drinks';
 
 // Components
 import {
@@ -51,22 +51,99 @@ const MOCK_DRINKS_CATEGORIES = [
     id: '6',
     name: 'Shot',
   },
+  {
+    id: '7',
+    name: 'Shot',
+  },
+  {
+    id: '8',
+    name: 'Shot',
+  },
+  {
+    id: '9',
+    name: 'Shot',
+  },
+  {
+    id: '10',
+    name: 'Shot',
+  },
+  {
+    id: '11',
+    name: 'Shot',
+  },
+  {
+    id: '12',
+    name: 'Shot',
+  },
+  {
+    id: '13',
+    name: 'Shot',
+  },
+  {
+    id: '14',
+    name: 'Shot',
+  },
+  {
+    id: '15',
+    name: 'Shot',
+  },
+  {
+    id: '16',
+    name: 'Shot',
+  },
+  {
+    id: '17',
+    name: 'Shot',
+  },
+  {
+    id: '18',
+    name: 'Shot',
+  },
+  {
+    id: '19',
+    name: 'Shot',
+  },
+  {
+    id: '20',
+    name: 'Shot',
+  },
+  {
+    id: '21',
+    name: 'Shot',
+  },
+  {
+    id: '22',
+    name: 'Shot',
+  },
+  {
+    id: '23',
+    name: 'Shot',
+  },
+  {
+    id: '24',
+    name: 'Shot',
+  },
+  {
+    id: '25',
+    name: 'Shot',
+  },
 ];
 
 const InitialScreen = () => {
   const { navigate } = useNavigation();
   const dispatch = useDispatch();
   const [hideSearchInput, setHideSearchInput] = useState(true);
-  const [searchText, setSearchText] = useState('');
+  const [searchDrinkText, setSearchDrinkText] = useState('');
 
-  function handleSearch() {
-    if (searchText.length > 0) {
-      alert(searchText);
+  function handleSearchText() {
+    if (searchDrinkText.length > 0) {
+      dispatch(setSearchText({ searchDrinkText, senderName: "search" }));
+      navigate('drinks');
     }
   }
 
   function handleSelectedCategory(drinkCategory) {
-    dispatch(setDrinkCategory({ drinkCategory }));
+    dispatch(setDrinkCategory({ drinkCategory, senderName: "category" }));
     navigate('drinks');
   }
 
@@ -79,7 +156,7 @@ const InitialScreen = () => {
             <InsideContainer>
               <Logo />
               <TitleContainer>
-                <Title>Categorias</Title>
+                <Title>Categories</Title>
               </TitleContainer>
               <CategoryList
                 data={MOCK_DRINKS_CATEGORIES}
@@ -101,15 +178,15 @@ const InitialScreen = () => {
               ) : (
                 <>
                   <SearchInput
-                    value={searchText}
-                    onChangeText={(text) => setSearchText(text)}
+                    value={searchDrinkText}
+                    onChangeText={(text) => setSearchDrinkText(text)}
                     autoFocus
                     placeholder="Search a cocktail.."
                   />
-                  <FooterMenuButton onPress={() => handleSearch()}>
+                  <FooterMenuButton onPress={() => handleSearchText()}>
                     <Icon
                       name="search"
-                      color={searchText ? '#fff' : '#d3d3d3'}
+                      color={searchDrinkText ? '#fff' : '#d3d3d3'}
                       size={20}
                     />
                   </FooterMenuButton>
