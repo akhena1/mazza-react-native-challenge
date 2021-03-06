@@ -3,8 +3,8 @@ import {
   CardStyleInterpolators,
   createStackNavigator,
 } from '@react-navigation/stack';
-import InitialScreen from './src/screens/InitialScreen';
-import Drinks from './src/screens/Drinks';
+import InitialScreen from './screens/InitialScreen';
+import Drinks from './screens/Drinks';
 
 const Stack = createStackNavigator();
 
@@ -12,7 +12,8 @@ function Routes() {
   return (
     <Stack.Navigator
       screenOptions={{
-        cardStyleInterpolator: CardStyleInterpolators.forRevealFromBottomAndroid,
+        cardStyleInterpolator:
+          CardStyleInterpolators.forRevealFromBottomAndroid,
       }}
     >
       <Stack.Screen
@@ -22,7 +23,13 @@ function Routes() {
         name="InitialScreen"
         component={InitialScreen}
       />
-      <Stack.Screen name="drinks" component={Drinks} />
+      <Stack.Screen
+        options={{
+          headerShown: false,
+        }}
+        name="drinks"
+        component={Drinks}
+      />
     </Stack.Navigator>
   );
 }
