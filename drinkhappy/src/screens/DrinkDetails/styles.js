@@ -34,15 +34,21 @@ export const Row = styled.View`
 `;
 
 export const TopicTitle = styled.Text`
-  font-family: "Lato-Bold";
+  font-family: 'Lato-Bold';
   font-size: 16px;
   color: #fff;
   margin-top: 20px;
 `;
 
 export const TopicContent = styled.Text`
-  font-family: "Lato-Regular";
+  font-family: 'Lato-Regular';
   font-size: 16px;
   color: #fff;
-  margin-top: ${props => props.outsideRow ? '20': '9'}px
+  margin-top: ${(props) => (props.outsideFirstRow ? '20' : '9')}px;
+`;
+
+export const ActivityIndicatorContainer = styled.View`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 `;

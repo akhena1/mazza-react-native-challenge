@@ -1,14 +1,18 @@
-import React, { useEffect } from 'react';
+/* eslint-disable no-nested-ternary */
+import React, { useEffect, useState } from 'react';
+import { ActivityIndicator } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { MOCK_DRINKS_LIST } from './drinksFixture';
+// Services
+import Icon from 'react-native-vector-icons/FontAwesome';
+import drinksService from '../../services/drinksService';
 
 // Actions
 import { setSelectedDrinkId } from '../../redux/actions/drinks';
+import { handleLoadingState } from '../../redux/actions/settings';
 
 // Components
-import Icon from 'react-native-vector-icons/FontAwesome';
 import {
   Container,
   Background,
@@ -26,19 +30,49 @@ import {
   DrinkItemButton,
   DrinkItemButtonText,
   DrinkItemInsideContainer,
+  NotFoundText,
+  ActivityIndicatorContainer,
 } from './styles';
+
+const { getDrinksByCategoryService, getDrinksByNameService } = drinksService;
 
 const Drinks = () => {
   const dispatch = useDispatch();
   const { goBack, navigate } = useNavigation();
+  const [drinksList, setDrinksList] = useState([]);
   const drinkCategory = useSelector((state) => state.drinks.drinkCategory);
   const searchText = useSelector((state) => state.drinks.searchDrinkText);
   const senderName = useSelector((state) => state.drinks.senderName);
+  const isLoading = useSelector((state) => state.settings.isLoading);
+
+  async function getDrinksByCategory() {
+    const { drinks } = await getDrinksByCategoryService(drinkCategory);
+    setDrinksList(drinks);
+    dispatch(handleLoadingState({ isLoading: false }));
+  }
+
+  async function getDrinksByName() {
+    const drinkName = searchText.trim().toLowerCase();
+    const { drinks } = await getDrinksByNameService(drinkName);
+    setDrinksList(drinks);
+    dispatch(handleLoadingState({ isLoading: false }));
+  }
 
   function handleSelectedDrink(selectedDrinkId) {
     dispatch(setSelectedDrinkId({ selectedDrinkId }));
     navigate('drink-details');
   }
+
+  useEffect(() => {
+    dispatch(handleLoadingState({ isLoading: true }));
+    if (senderName === 'category') {
+      getDrinksByCategory();
+    }
+
+    if (senderName === 'search') {
+      getDrinksByName();
+    }
+  }, []);
 
   return (
     <>
@@ -56,14 +90,20 @@ const Drinks = () => {
                   {senderName === 'category' ? drinkCategory : searchText}
                 </Title>
               </TitleContainer>
-              <DrinksList
-                windowSize={12}
-                data={MOCK_DRINKS_LIST}
-                renderItem={({ item }) => {
-                  return (
+              {isLoading ? (
+                <ActivityIndicatorContainer>
+                  <ActivityIndicator size="large" color="#e87200" />
+                </ActivityIndicatorContainer>
+              ) : drinksList ? (
+                <DrinksList
+                  windowSize={12}
+                  data={drinksList}
+                  renderItem={({ item }) => (
                     <DrinkItemContainer>
                       <DrinkItemInsideContainer>
-                        <DrinkItemImage source={{ uri: item.strDrinkThumb }} />
+                        <DrinkItemImage
+                          source={{ uri: `${item.strDrinkThumb}/preview` }}
+                        />
                         <DrinkItemTitle>{item.strDrink}</DrinkItemTitle>
                       </DrinkItemInsideContainer>
                       <DrinkItemButton
@@ -72,10 +112,17 @@ const Drinks = () => {
                         <DrinkItemButtonText>Ver</DrinkItemButtonText>
                       </DrinkItemButton>
                     </DrinkItemContainer>
-                  );
-                }}
-                keyExtractor={(item) => item.idDrink}
-              />
+                  )}
+                  keyExtractor={(item) => item.idDrink}
+                />
+              ) : (
+                <DrinkItemContainer>
+                  <NotFoundText>
+                    Unfortunately, we dont find a cocktail called {searchText}
+                    :(
+                  </NotFoundText>
+                </DrinkItemContainer>
+              )}
             </InsideContainer>
           </BackgroundOverlay>
         </Background>

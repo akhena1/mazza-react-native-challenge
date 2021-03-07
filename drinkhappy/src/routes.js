@@ -32,9 +32,9 @@ function Routes() {
         name="drinks"
         component={Drinks}
       />
-      <Stack.Screen 
+      <Stack.Screen
         options={{
-          headerShown: false
+          headerShown: false,
         }}
         name="drink-details"
         component={DrinkDetails}

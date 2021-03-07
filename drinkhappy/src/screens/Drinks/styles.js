@@ -45,6 +45,7 @@ export const DrinkItemTitle = styled.Text`
   color: #fff;
   flex-direction: row;
   margin-left: 15px;
+  max-width: 200px;
 `;
 
 export const DrinkItemButton = styled.TouchableOpacity`
@@ -58,4 +59,17 @@ export const DrinkItemButtonText = styled.Text`
   font-family: 'Lato-Regular';
   font-size: 16px;
   color: #fff;
+`;
+
+export const NotFoundText = styled.Text`
+  font-family: 'Barlow-Bold';
+  font-size: 25px;
+  color: #e87200;
+  margin: 0 auto;
+`;
+
+export const ActivityIndicatorContainer = styled.View`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 `;
